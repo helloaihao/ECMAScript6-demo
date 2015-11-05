@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<script src="../browser.min.js"></script>
+	<script type="text/babel">
+		var tmp1 = 100;
+		{
+			console.log(tmp1); //undefined
+			let tmp1;
+		}
+
+		var tmp2 = 100;
+		{
+			console.log(tmp2); //100
+			var tmp2;
+		}
+	</script>
+</body>
+</html>
